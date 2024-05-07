@@ -1,11 +1,33 @@
 /* Default styles for small screens and anything not caught by media */
 body{
     background-color:rosybrown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column {
+    width: 100%;
 }
 
 /* Styles for screens 600px wide and larger */
-@media screen and (min-width: 600px){
+@media screen and (width > 600px){
     body{
         background-color:blanchedalmond;
     }
 }
+.column {
+    float: left;
+    width: 33.3%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+/* 
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  } */
