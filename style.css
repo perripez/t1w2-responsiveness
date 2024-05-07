@@ -4,10 +4,6 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.column {
-    width: 100%;
-}
-
 /* Styles for screens 600px wide and larger */
 @media screen and (width > 600px){
     body{
@@ -25,9 +21,9 @@ body{
     display: table;
     clear: both;
   }
-/* 
+
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
     }
-  } */
+  }
