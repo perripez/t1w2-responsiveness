@@ -9,11 +9,11 @@ body{
     body{
         background-color:blanchedalmond;
     }
-}
+
 .column {
     float: left;
     width: 33.3%;
-  }
+  }}
   
   /* Clear floats after the columns */
   .row:after {
@@ -22,8 +22,3 @@ body{
     clear: both;
   }
 
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
