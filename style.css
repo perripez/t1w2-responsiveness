@@ -5,21 +5,59 @@ body{
     font-family: "inter tight";
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 226, 236);
+    border: 5px solid pink;
+    border-radius: 20%;
+    text-align: center;
+    line-height: 6;
+    
+}
+
+main{
+    display:flex;
+    flex-direction: column;    
+}
+
 /* Styles for screens 600px wide and larger */
 @media screen and (width > 600px){
     body{
         background-color:blanchedalmond;
     }
 
-.column {
+    main{
+        flex-direction: row;
+        gap:1rem;
+    }
+
+    .main_pa{
+      padding-left: 1rem; 
+    }
+
+    header{
+        flex-direction: row;
+        justify-content:left;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+/* .column {
     float: left;
     width: 33.3%;
-  }}
-  
+  }
+   */
   /* Clear floats after the columns */
-  .row:after {
+  /* .row:after {
     content: "";
     display: table;
     clear: both;
-  }
-
+  } */
+}
